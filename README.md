@@ -1,14 +1,11 @@
 <br/>
 <p align="center">
-<a href="https://chain.link" target="_blank">
-<img src="./box-img-lg.png" width="225" alt="Chainlink Hardhat logo">
 </a>
 </p>
 <br/>
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/smartcontractkit/hardhat-starter-kit)
 
-- [Chainlink Hardhat Starter Kit](#chainlink-hardhat-starter-kit)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
@@ -22,7 +19,6 @@
   - [Auto-Funding](#auto-funding)
 - [Test](#test)
 - [Interacting with Deployed Contracts](#interacting-with-deployed-contracts)
-  - [Chainlink Price Feeds](#chainlink-price-feeds)
   - [Request & Receive Data](#request--receive-data)
   - [VRF Get a random number](#vrf-get-a-random-number)
   - [Keepers](#keepers)
@@ -36,13 +32,6 @@
 - [Contributing](#contributing)
 - [Thank You!](#thank-you)
   - [Resources](#resources)
-
-# Chainlink Hardhat Starter Kit
- Implementation of the following 4 Chainlink features using the [Hardhat](https://hardhat.org/) development environment:
- - [Chainlink Price Feeds](https://docs.chain.link/docs/using-chainlink-reference-contracts)
- - [Chainlink VRF](https://docs.chain.link/docs/chainlink-vrf)
- - [Chainlink Keepers](https://docs.chain.link/docs/chainlink-keepers/introduction/)
- - [Request & Receive data](https://docs.chain.link/docs/request-and-receive-data)
 
 # Getting Started 
 
@@ -180,9 +169,7 @@ export PRIVATE_KEY='abcdef'
 
 For other networks like mainnet and polygon, you can use different environment variables for your RPC URL and your private key. See the `hardhat.config.js` to learn more. 
 
-3. Get some Rinkeby Testnet ETH and LINK 
-
-Head over to the [Chainlink faucets](https://faucets.chain.link/) and get some ETH and LINK. Please follow [the chainlink documentation](https://docs.chain.link/docs/acquire-link/) if unfamiliar. 
+3. Get some Rinkeby Testnet ETH 
 
 4. Create VRF V2 subscription
 
@@ -271,13 +258,6 @@ yarn hardhat test --parallel
 
 After deploying your contracts, the deployment output will give you the contract addresses as they are deployed. You can then use these contract addresses in conjunction with Hardhat tasks to perform operations on each contract.
 
-
-## Chainlink Price Feeds
-The Price Feeds consumer contract has one task, to read the latest price of a specified price feed contract
-
-```bash
-yarn hardhat read-price-feed --contract insert-contract-address-here --network network
-```
 
 ## Request & Receive Data
 The APIConsumer contract has two tasks, one to request external data based on a set of parameters, and one to check to see what the result of the data request is. This contract needs to be funded with link first:
@@ -412,6 +392,4 @@ Contributions are always welcome! Open a PR or an issue!
 # Thank You!
 
 ## Resources
-
-- [Chainlink Documentation](https://docs.chain.link/)
 - [Hardhat Documentation](https://hardhat.org/getting-started/)
