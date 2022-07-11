@@ -5,7 +5,6 @@ require("solidity-coverage")
 require("hardhat-gas-reporter")
 require("hardhat-contract-sizer")
 require("./tasks")
-require("@appliedblockchain/chainlink-plugins-fund-link")
 require("dotenv").config()
 
 /**
