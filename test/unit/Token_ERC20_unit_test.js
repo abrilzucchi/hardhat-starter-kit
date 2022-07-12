@@ -16,10 +16,6 @@ describe("Our Demo Token", function () {
     [owner, addr1, addr2] = await ethers.getSigners();
 
   });
-  
-  it("Should should successfully deploy", async function () {
-    console.log("success!");
-  });
 
   it("Should deploy with 1m of supply for the owner of the contract", async function() {
     const balance = await demoToken.balanceOf(owner.address);
